@@ -7,7 +7,7 @@
  
     //Die means our program will stop running if there is an error.
     if($connection->connect_error) {
-        die("Error: " . $connection->connect_error);
+        die("<p>Error: " . $connection->connect_error . "</p>");
     }  
      
     //We are going to select that data base in our file.  
@@ -21,13 +21,13 @@
           
     //The dot is use to concatenate or link varibles of code.   
         if($query) {
-            echo "Successfully created database: " . $database;
+            echo "<p>Successfully created database: " . $database . "</p>";
         }
     } 
     //Since the code will only run when the database doesn't exist, it will only run once if the database was sucessfully created. 
     //This else statement will only apply if the database already exists.
     else {
-        echo "Database already exists.";
+        echo "<p>Database already exists.</p>";
     } 
     //The name of this table is posts which is a table that stores all the posts on the blog. 
     //NOT NULL means the id can never be empty. AUTO_INCREMENT will give each post a unique id automatically. 
@@ -39,10 +39,10 @@
             . "PRIMARY KEY (id))");  
      
     if($query) {
-        echo "Successfully created table: posts";
+        echo "<p>Successfully created table: posts</p>";
     } 
     else {
-        echo "$connection->error";
+        echo "<p>$connection->error</p>";
     }
     
    
