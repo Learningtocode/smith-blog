@@ -6,9 +6,12 @@
             <file>file:/C:/xampp/htdocs/smith-blog/view/footer.php</file>
             <file>file:/C:/xampp/htdocs/smith-blog/view/header.php</file>
             <file>file:/C:/xampp/htdocs/smith-blog/index.php</file>
+            <file>file:/C:/xampp/htdocs/smith-blog/controller/create-post.php</file>
             <file>file:/C:/xampp/htdocs/smith-blog/controller/create-db.php</file>
+            <file>file:/C:/xampp/htdocs/smith-blog/view/form.php</file>
             <file>file:/C:/xampp/htdocs/smith-blog/view/navigation.php</file>
             <file>file:/C:/xampp/htdocs/smith-blog/model/database.php</file>
+            <file>file:/C:/xampp/htdocs/smith-blog/post.php</file>
             <file>file:/C:/xampp/htdocs/smith-blog/model/config.php</file>
         </group>
     </open-files>
