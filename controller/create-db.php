@@ -1,6 +1,6 @@
 <?php 
     //Require once takes the code in the in another folder and place it in here.
-    require_once(__DIR__ . "/../model/database.php"); 
+    require_once(__DIR__ . "/../model/config.php"); 
      
     //Connection is the the connection to our local data base.
     $connection = new mysqli($host, $username, $password);

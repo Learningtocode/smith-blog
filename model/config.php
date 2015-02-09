@@ -1,2 +1,7 @@
 <?php
-    $path = "/smith-blog/";
+    $path = "/smith-blog/"; 
+     
+    $host = "localhost"; 
+    $username = "root"; 
+    $password = "root"; 
+    $database = "blog_db";
