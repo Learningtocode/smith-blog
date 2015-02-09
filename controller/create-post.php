@@ -21,6 +21,6 @@
    }
    
      
-    //You must remember to close your connection. 
+    //You must remember to close your connection to the database. 
     $connection->close();
     
