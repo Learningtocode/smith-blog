@@ -1,10 +1,7 @@
 <?php 
     //Require once takes the code in the in another folder and place it in here.
     require_once(__DIR__ . "/../model/config.php"); 
-     
-    //Connection is the the connection to our local data base.
-    $connection = new mysqli($host, $username, $password);
- 
+
     //Die means our program will stop running if there is an error.
     if($connection->connect_error) {
         die("<p>Error: " . $connection->connect_error . "</p>");
