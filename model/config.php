@@ -1,5 +1,7 @@
 <?php 
-    require_once(__DIR__ . "/database.php");
+    require_once(__DIR__ . "/database.php");  
+    session_start(); 
+    
 //$path is helping us access files within our database.    
     $path = "/smith-blog/"; 
      
@@ -11,4 +13,8 @@
      
 //New Database is the object that will be stored in connection. 
 //Connection is the the connection to our local data base.  
-    $connection = new Database($host, $username, $password, $database);
+//We must determine if the session connection variable exist.     
+    if(!isset($_SESSION["connection"])) { 
+        $connection = new Database($host, $username, $password, $database); 
+        $_SESSION["connection"] = $connection;
+    }
