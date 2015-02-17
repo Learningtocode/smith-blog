@@ -5,12 +5,16 @@
         <group>
             <file>file:/C:/xampp/htdocs/smith-blog/view/footer.php</file>
             <file>file:/C:/xampp/htdocs/smith-blog/view/header.php</file>
+            <file>file:/C:/xampp/htdocs/smith-blog/view/register-form.php</file>
             <file>file:/C:/xampp/htdocs/smith-blog/index.php</file>
+            <file>file:/C:/xampp/htdocs/smith-blog/register.php</file>
             <file>file:/C:/xampp/htdocs/smith-blog/controller/create-post.php</file>
             <file>file:/C:/xampp/htdocs/smith-blog/model/Database.php</file>
             <file>file:/C:/xampp/htdocs/smith-blog/controller/create-db.php</file>
+            <file>file:/C:/xampp/htdocs/smith-blog/view/form.php</file>
             <file>file:/C:/xampp/htdocs/smith-blog/post.php</file>
             <file>file:/C:/xampp/htdocs/smith-blog/model/config.php</file>
+            <file>file:/C:/xampp/htdocs/smith-blog/controller/create-user.php</file>
         </group>
     </open-files>
 </project-private>
