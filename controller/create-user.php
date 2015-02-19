@@ -7,7 +7,10 @@
     $password = filter_input(INPUT_POST, "password", FILTER_SANITIZE_STRING); 
      
     echo $password;  
-    //Video 43 error
-    $salt = "$5$" . "rounds=5000$" . uniqid(nt_rand(), true) . "$";
-  
-    echo salt;
+    
+    $salt = "$5$" . "rounds=5000$" . uniqid(mt_rand(), true) . "$"; 
+     
+    $hashedPassword = crypt($password, $salt); 
+     
+    
+    
