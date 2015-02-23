@@ -1,5 +1,13 @@
 <?php  
-    require_once(__DIR__ . "/../model/config.php");
+    require_once(__DIR__ . "/../model/config.php");  
+    require_once(__DIR__ . "/../coontroller/login-verify.php");
+     
+    //If you are not a user, you can not have access to navigation.  
+    //Die kills off the program.  
+    if(!authenticateUser()) { 
+     header("Location: " . $path . "index.php");
+     die();
+ }
 ?>
 <nav>  
     <ul>

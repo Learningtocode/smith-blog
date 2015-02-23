@@ -1,7 +1,14 @@
  <?php  
     //Create-db's purpose as of right now is to query the database. It's to create the table for the post. 
     //Require once takes the code in the in another folder and place it in here.
-    require_once(__DIR__ . "/../model/config.php");  
+    require_once(__DIR__ . "/../model/config.php");   
+     
+    //If you are not a user, you can not have access create-db.  
+    //Die kills off the program.  
+    if(!authenticateUser()) { 
+     header("Location: " . $path . "index.php");
+     die();
+ }
        
     //The name of this table is posts which is a table that stores all the posts on the blog. 
     //NOT NULL means the id can never be empty. AUTO_INCREMENT will give each post a unique id automatically. 

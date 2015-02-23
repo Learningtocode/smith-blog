@@ -11,14 +11,18 @@ class Database {
     private $username;
     private $password;
     private $database; 
-    public $error;
+    public $error; 
+ //   public $date; 
+ //   public $time;
 
     public function __construct($host, $username, $password, $database) {
         //$this is relating to the varaibles in the class Database.
         $this->host = $host;
         $this->username = $username;
         $this->password = $password;
-        $this->database = $database;
+        $this->database = $database; 
+  //      $this->date = $date; 
+  //      $this->time = $time;
          
         //This code below is different from the code in config. 
         $this->connection = new mysqli($host, $username, $password);
