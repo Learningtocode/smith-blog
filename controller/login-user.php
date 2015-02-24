@@ -3,7 +3,17 @@
     //We now have access to our database. 
      
     $username = filter_input(INPUT_POST, "username", FILTER_SANITIZE_STRING); 
-    $password = filter_input(INPUT_POST, "password", FILTER_SANITIZE_STRING); 
+    $password = filter_input(INPUT_POST, "password", FILTER_SANITIZE_STRING);  
+    $result = mysql_query("SELECT * FROM Users WHERE UserName LIKE '$username'");
+
+if($result === FALSE) { 
+    die(mysql_error()); // TODO: better error handling
+}
+
+while($row = mysql_fetch_array($result))
+{
+    echo $row['FirstName'];
+}
       
     //We are just selecting the password and salt from our users table specifically to the variable username.
     $query = $_SESSION["connection"]->query("SELECT salt, password FROM users WHERE BINARY username = '$username'"); 
