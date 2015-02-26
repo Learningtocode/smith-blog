@@ -1,0 +1,40 @@
+header {
+background-image: url(light_toast.png); 
+text-transform: uppercase;
+text-align: center; 
+
+}
+h1 {
+    font: 4rem "Bree Serif";
+    text-shadow: -1px -1px 1px rgba(255,255,255,0.4),
+        1px 1px 1px rgba(0,0,0,0.4);
+    color: black;
+    padding-top: 1rem; opacity: 0.3;
+    line-height: 1; margin: 1.5rem;
+}
+header nav {
+    font-weight: 100;
+    font-family: Agenda-Light, Agenda, Arial, sans-serif;
+}
+header nav a {
+    text-decoration: none;
+    font-size: 1.4rem; color: #333;
+    background: rgba(255,255,255,0.4);
+    transition: .6s; padding: .5rem;
+}
+header nav a:list-child { border-right: none; }
+header nav a:hover { background: rgba(0,0,0,0.5); color: #fee; } 
+ 
+header nav { display: table; width: 100%; }
+header nav a { display: table-cell; vertical-align: middle; } 
+ 
+header nav { display: table; width: 100%; table-layout: fixed; } 
+ 
+video#bgvid {
+position: fixed; right: 0; bottom: 0;
+min-width: 100%; min-height: 100%;
+width: auto; height: auto; z-index: -100;
+background: url(video/May.mp4) no-repeat;
+background-size: cover;
+} 
+ 

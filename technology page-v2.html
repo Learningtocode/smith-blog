@@ -1,0 +1,156 @@
+<html>
+    <head>
+        <title>Technologies</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <link type="text/css" rel="stylesheet" href="css/bootstrap-theme.css"> 
+        <link type="text/css" rel="stylesheet" href="css/bootstrap.css"> 
+        <link type="text/css" rel="stylesheet" href="css/custom-style.css">  
+    </head>
+    <body class="technopage"> 
+                   <!-- SCM Music Player http://scmplayer.net -->
+                    <script type="text/javascript" src="http://scmplayer.net/script.js" 
+                    data-config="{'skin':'http://static.tumblr.com/sbxkdxg/yBhmpl793/coffporbau-de-incertezas.css','volume':50,'autoplay':false,'shuffle':false,'repeat':0,'placement':'bottom','showplaylist':false,'playlist':[{'title':'Love Never Felt So Good ','url':'http://www.youtube.com/watch?v=oG08ukJPtR8'},{'title':'Somewhere over the rainbow','url':'http://www.youtube.com/watch?v=3BeKhlUzPUc'},{'title':'Happy','url':'http://www.youtube.com/watch?v=y6Sxv-sUYtM'},{'title':'It%27s Not Unusual','url':'http://www.youtube.com/watch?v=yca2BCwAnBQ'},{'title':'Chocolate High ','url':'http://www.youtube.com/watch?v=MHuzXuRskSE'},{'title':'Chasing Pavements','url':'http://www.youtube.com/watch?v=08DjMT-qR9g'},{'title':'Hot Coffee','url':'http://www.youtube.com/watch?v=T236X4qTZ3E'}]}" ></script>
+                    <!-- SCM Music Player script end -->
+        <header>
+            <nav> 
+                <!--This is the code for the navigation bar-->
+                         <nav class="navbar navbar-default" role="navigation">
+                         <div class="container-fluid">
+                             <!--I choose container-fluid because I already had a container used for the index page.-->
+                             <!-- Brand and toggle get grouped for better mobile display -->
+                           <div class="navbar-header">
+                             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                               <span class="sr-only">Toggle navigation</span>
+                               <span class="icon-bar"></span>
+                               <span class="icon-bar"></span>
+                               <span class="icon-bar"></span>
+                             </button>
+                           </div>
+                           <!-- Collect the nav links, forms, and other content for toggling --> 
+                           <!--Below I put my links for each HTML page I created into the navigational bar. So you can go back and forth from each page-->
+                           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                             <ul class="nav navbar-nav">
+                               <li class="active"><a href="index.html">Index</a></li>
+                               <li><a href="Projects.html">Projects</a></li>
+                                <li class="dropdown">
+                                 <a href="technology page-v2.html" class="dropdown-toggle" data-toggle="dropdown">Technologies<span class="caret"></span></a>
+                                 <!--This dropdown was for the technologies nav only. The navigational bar made it a lot easier for me to have the drop down menu compared to having a drop down menu for buttons.--> 
+                                 <ul class="dropdown-menu" role="menu">
+                                   <li><a href="http://www.w3schools.com">HTML Info</a></li>
+                                   <li><a href="http://www.htmldog.com">CSS Info</a></li>
+                                   <li><a href="http://getbootstrap.com">Bootstrap Info</a></li>
+                                   <li class="divider"></li> 
+                                   <!--I wanted to make these links outliers since they're not part of the description group above so to accomplish this I used a divider class.-->
+                                   <li><a href="http://www.codecademy.com">Learn to Code</a></li>
+                                   <li class="divider"></li>
+                                   <li><a href="http://www.theappacademy.us">APP Academy</a></li>
+                                 </ul>
+                               </li>
+                             </ul>
+                           </div><!-- /.navbar-collapse -->
+                         </div><!-- /.container-fluid -->
+                       </nav> 
+                    </nav> 
+        </header>  
+                <!--End of navigational code.-->
+        <article>  
+            <!--This is my collapse--> 
+            <div class="panel-group" id="accordion">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title"> 
+                            <!--This panel title once clicked on the site will 'collapse' the information within the panel body-->
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                                Description of HTML
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapseOne" class="panel-collapse collapse in">
+                        <div class="panel-body" > 
+                            <!--This is what will show up once you click the panel title.-->
+                            Hypertext Markup Language is the what makes up web sites on the Internet. It uses tags enclosed most of the time in angle brackets. It allows media such as images or videos to be embedded into a web site. HTML allows the use of paragraphs, titles, and headings to be shown on a web browser. For example the paragraphs on a web site are made by a paragraph tag of two p's enclosed in angle brackets with the words that show on the web site between the brackets. Wikipedia said "HTML markup consists of several key components, including tags (and their attributes), character-based data types, character references and entity references".
+                            <img src="images/html5-black-logo.png" alt="html" class="img-rounded">
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                             Description of CSS
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapseTwo" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            Cascading Style Sheets is a style sheet language that we use to create style to web sites like the layout, colors, and fonts on web sites. It works with HTML and other XML documents to accomplish this goal. Majority of web sites use CSS for the presentation of their web sites. It deals with margins, padding, and borders so objects on paged are set right on the web page.
+                             <img src="images/CSS-Logo-214x300.png" alt="css" class="img-rounded">
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                <div class="panel-heading">
+                   <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+                        Description of Bootstrap
+                    </a>
+                   </h4>
+                </div>
+                <div id="collapseThree" class="panel-collapse collapse">
+                  <div class="panel-body">
+                      Bootstrap is literally a collection of tools you use for your web site. Wikipedia said "It contains HTML and CSS-based design templates for typography, forms, buttons, navigation and other interface components, as well as optional JavaScript extensions". When you go on a web site and see a slide show, that is one of Bootstraps tool. It is compatible will all the newest  and was rated the number one project this year on <a href="https://github.com">GitHub</a>.
+                      <img src="images/bootstrap.png" alt="boot" class="img-rounded">
+                  </div>
+                </div>
+                </div> 
+                 <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
+                             Description of JavaScript
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapseFour" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            JavaScript is an object-oriented computer programming language commonly used to create interactive effects within web browsers. We are using JavaScript to make the game snake in this case. It does not interact with web servers what so ever but instead with web browsers as stated previously. 
+                             <img src="images/JavaScript logo.png" alt="java" class="img-rounded">
+                        </div>
+                    </div>
+                </div>   
+                    <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseFive">
+                             Description of MelonJS
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapseFive" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            MelonJS is a computer game program that adapts familiar aspects of Javascript. MelonJS integrates Tiled map allowing the user to design levels of their game easily. MelonJS is compatible with most browsers. MelonJS is still being altered and fix since it is still a project in working progress. 
+                             <img src="images/melonjs.png" alt="css" class="img-rounded">
+                        </div>
+                    </div>
+                </div> 
+                    <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseSix">
+                             Description of jQuery
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapseSix" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            jQuery is a fast, small, and feature-rich JavaScript library. It makes things like HTML document traversal and manipulation, event handling, animation, and Ajax much simpler with an easy-to-use API that works across a multitude of browsers. With a combination of versatility and extensibility, jQuery has changed the way that millions of people write JavaScript. This description is from the jquery.com.
+                             <img src="images/jquery_1.png" alt="css" class="img-rounded">
+                        </div>
+                    </div>
+                </div>
+            </div>  
+        </article> 
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+    </body>
+</html>

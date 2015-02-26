@@ -41,6 +41,5 @@
     } 
     else {
         echo "<p>" . $_SESSION["connection"]->error . "</p>";
-    }
-   
-  
+    } 
+     
