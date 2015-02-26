@@ -18,7 +18,7 @@
     $ema = $_SESSION["connection"]->query("SELECT username FROM users WHERE email ='" . $email . "'");
        
 //If username is greater than 0, following the exact specific requirements.
-    if (!$username->num_rows > 0 && !$email->num_rows > 0) {
+    if (!$use->num_rows > 0 && !$ema->num_rows > 0) {
     $query = $_SESSION["connection"]->query("INSERT INTO users SET "
             . "email = '$email',"
             . "username = '$username',"

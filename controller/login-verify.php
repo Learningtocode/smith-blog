@@ -4,7 +4,7 @@
 //The file can be able to use this function to tell if the user is log in or not.
     function authenticateUser()  { 
 //We want to tell if session called authenticated hasn't been set. 
-//THis if statement asks are you logged in?       
+//This if statement asks are you logged in?       
         if(!isset($_SESSION["authenticated"])) {
             return false;
         } 

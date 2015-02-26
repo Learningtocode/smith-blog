@@ -18,15 +18,17 @@ and open the template in the editor.
     </head> 
     <body>
         <header>  
-            <h1>Wanna Be</h1> 
+            <h1>Wanna Be</h1>  
+            <!--This is the navigation bar for the blog.-->
             <nav>
                <a href="index.php">Index</a>
-               <a href="form.php">Make Post</a>
+               <a href="post.php">Make Post</a>
                <a href="login.php">Log In</a> 
                <a href="register.php">Register</a> 
                <a href="index.html">My Portfolio</span></a> 
             </nav>
-        </header>  
+        </header>   
+        <!--This is to be posted on all pages-->
         <video autoplay loop poster="video/May.mp4" id="bgvid" controls muted>
             <source src="video/May.mp4" type="video/webm"> 
         </video>  

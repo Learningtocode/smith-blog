@@ -15,8 +15,8 @@
     //255 will be the maxium number of charaters within the title.
     $query = $_SESSION["connection"]->query("CREATE TABLE posts ("
             . "id int(11) NOT NULL AUTO_INCREMENT," 
-            . "title varchar(255) NOT NULL," 
-            . "post text NOT NULL," 
+            . "title varchar(255) NOT NULL,"  
+            . "post text NOT NULL,"  
             . "PRIMARY KEY (id))");  
      
     if($query) {
