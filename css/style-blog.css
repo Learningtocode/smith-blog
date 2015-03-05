@@ -1,10 +1,10 @@
-//The header contains the navigation and h1.
+/*The header contains the navigation and h1.*/
 header { 
+background-image: url(light_toast.png);
 text-transform: uppercase;
 text-align: center; 
-
 } 
-//Design for the header.
+/*Design for the header.*/
 h1 {
     font: 4rem "Bree Serif";
     text-shadow: -1px -1px 1px rgba(255,255,255,0.4),
@@ -13,7 +13,7 @@ h1 {
     padding-top: 1rem; opacity: 0.3;
     line-height: 1; margin: 1.5rem;
 } 
-//Font families are like a backup if the font you have now doesn't load.
+/*Font families are like a backup if the font you have now doesn't load.*/
 header nav {
     font-weight: 100;
     font-family: Agenda-Light, Agenda, Arial, sans-serif;
@@ -24,7 +24,7 @@ header nav a {
     background: rgba(255,255,255,0.4);
     transition: .6s; padding: .5rem;
 } 
-//This is the design for the links to the different pages.
+/*This is the design for the links to the different pages.*/
 header nav a:list-child { border-right: none; }
 header nav a:hover { background: rgba(0,0,0,0.5); color: #fee; } 
  
@@ -33,7 +33,7 @@ header nav a { display: table-cell; vertical-align: middle; }
  
 header nav { display: table; width: 100%; table-layout: fixed; } 
   
-//This makes the background big.
+/*This makes the background big.*/
 video#bgvid {
 position: fixed; right: 0; bottom: 0;
 min-width: 100%; min-height: 100%;
@@ -41,4 +41,5 @@ width: auto; height: auto; z-index: -100;
 background: url(video/May.mp4) no-repeat;
 background-size: cover;
 }  
+           
  

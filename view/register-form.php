@@ -2,11 +2,8 @@
  require_once(__DIR__ . "/../model/config.php");
 ?>  
  
-
-
 <h1>Register</h1>  
   
-
 <form class="form-group" method="post" action="<?php echo $path . "controller/create-user.php"; ?>"> 
     <!--Each div is a section for like the username, password, and ect.-->
     <div class="form-group">  

@@ -9,12 +9,12 @@
     $query = $_SESSION["connection"]->query("SELECT salt, password FROM users WHERE BINARY username = '$username'"); 
       
     //We are going to check if there is at less one piece of info in our query.
-    //Num_rows will teell us how many rows we get from the database.
+    //Num_rows will tell us how many rows we get from the database.
     if($query->num_rows == 1) {
         $row = $query->fetch_array(); 
          
         if($row["password"] === crypt($password, $row["salt"])){  
-    //We want to store whether or not the user has be authenticated.        
+    //We want to store whether or not the user has been authenticated.        
             $_SESSION["authenticated"] = true;
             echo "<p>Login Successful!</p>";
         } 
